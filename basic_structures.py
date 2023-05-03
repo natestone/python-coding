@@ -11,15 +11,33 @@ import sys
 opt = sys.argv[1]
 person = sys.argv[2]
 
-if opt == '-h':
-     i = 0
-     while i < 12:
-        i = i + 1
-        print("Hello, " + person + "! (" + str(i) + ")")
-elif opt == '-g':
-     i = 0
-     while i < 12:
-        i = i + 1
-        print("Goodbye, " + person + "! (" + str(i) + ")")
 
+# Greeting Function
+def greeting(greetingType):
+     i = 0
+     while i < 12:
+        i = i + 1
+        print(greetingType + ", " + person + "! (" + str(i) + ")")
+
+
+# Main Code
+if opt == '-h':
+    greeting('Hello')
+elif opt == '-g':
+    greeting('Goodbye')
+
+
+fruits = ["apple", "banana", "cherry"]
+
+#
+#  [
+#    0 => "apple",
+#    1 => "banana",
+#    2 => "cherry"
+#  ]
+#
+
+# python
+for index, fruit in enumerate(fruits):
+    print((index + 1), fruit)
 
