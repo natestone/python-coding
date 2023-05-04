@@ -5,8 +5,16 @@
 #
 
 import sys
+import math
+
 #print(sys.argv[1])
 #print(sys.argv[2])
+
+
+# Check if the user input the correct number of inputs
+if (len(sys.argv) < 3) or (len(sys.argv) > 3):
+    print "usage: python basic_structures.py [-h|-g] [name]"
+    quit()
 
 opt = sys.argv[1]
 person = sys.argv[2]
@@ -40,4 +48,7 @@ fruits = ["apple", "banana", "cherry"]
 # python
 for index, fruit in enumerate(fruits):
     print((index + 1), fruit)
+
+
+# Now for some math
 
