@@ -13,6 +13,13 @@
 # https://gist.github.com/xeecos/0a326e03f44633fed726867b0e71a3fe
 # https://gist.github.com/xeecos/ceeb8fd83cc15b4e83b713bb75a982fd
 #
+#
+# Firmware
+# https://mblock.makeblock.com/en-us/download/
+# https://support.makeblock.com/hc/en-us/articles/1500013010242
+# https://ide.mblock.cc/
+#
+#
 
 import sys
 import math
@@ -22,7 +29,6 @@ import cyberpi
 
 #print(sys.argv[1])
 #print(sys.argv[2])
-
 
 # Check if the user input the correct number of inputs
 if (len(sys.argv) != 3):
